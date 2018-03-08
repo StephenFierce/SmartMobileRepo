@@ -96,21 +96,13 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    public void sendMessage(View view){
-        Intent intent = new Intent(this, DisplayMessageActivity.class);
-        EditText editText = (EditText) findViewById(R.id.editText);
-        String message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE, message);
-        startActivity(intent);
-    }
-
     public void loadLogin(View view){
         Intent intent = new Intent(this, Login.class);
         startActivity(intent);
     }
 
     public void loadRegister(View view){
-        Intent intent = new Intent(this, Register.class);
+        Intent intent = new Intent(this, RegisterActivity.class);
         startActivity(intent);
     }
 }

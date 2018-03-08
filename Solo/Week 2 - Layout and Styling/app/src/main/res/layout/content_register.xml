@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="basicapp.basicapp.Register"
-    android:id="@+id/content_register">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_register2"
+    android:id="@+id/content_register">>
 
     <EditText
         android:id="@+id/txtUsername"
@@ -14,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="100dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/field_username"
@@ -43,17 +42,14 @@
 
     <Button
         android:id="@+id/btnRegister"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_width="161dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
         android:onClick="register"
-        android:text="Register"
+        android:text="@string/title_activity_register"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.468"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtPassword"
-        tools:text="Register" />
-
+        tools:text="@string/title_activity_register" />
 </android.support.constraint.ConstraintLayout>
